@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+:root {
+    --primarycolor: #ff3a44;
+    --titlecolor: #222222;
+    --subtitlecolor: #888888;
+    --commoncolor: #ffffff;
+    --black: #162637;
+    --orange: #ffbd2f;
+    --primarybg: #0489ca;
+    --secondarybg: #0489ca;
+    --poppins: "Poppins", sans-serif;
+    --primaryweight: 400;
+    --secondaryweight: 600;
+    --mainweight: 700;
+}
+
+/* nav-bar area Start */
+
+.navbar button {
+    padding: 13px 25px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: var(--primarycolor);
+    color: var(--commoncolor);
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    font-size: 15px;
+    transition: all linear 0.3s;
+}
+
+.navbar button:hover {
+    background: transparent;
+    border-color: var(--primarycolor);
+    color: var(--primarycolor);
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    position: relative;
+    padding-left: 38px;
+    padding-right: 38px;
+    color: var(--black);
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    font-size: 15px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    top: -10px;
+    left: 32px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #aaaaaa;
+    opacity: 0;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover::after {
+    opacity: 1;
+    width: 54%;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* nav end */
+
+/* Banner start */
+
+#banner {
+    padding-top: 97px;
+    padding-bottom: 60px;
+}
+
+.banner-content h1 {
+    padding-top: 19px;
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    line-height: 58px;
+    font-size: 48px;
+    padding-right: 140px;
+}
+
+.banner-content p {
+    padding-top: 20px;
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    color: var(--subtitlecolor);
+    line-height: 27px;
+    font-size: 17px;
+    padding-right: 201px;
+}
+
+.banner-content button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: var(--primarycolor);
+    color: var(--commoncolor);
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    font-size: 16px;
+    margin-top: 28px;
+    transition: all linear 0.3s;
+}
+
+.banner-content button:hover {
+    background: transparent;
+    border-color: var(--primarycolor);
+    color: var(--primarycolor);
+}
+
+.banner-flex {
+    display: flex;
+}
+
+/* Banner end */
+
+/* donation start */
+#donation {
+    padding-bottom: 100px;
+}
+
+.service-content h5 {
+    font-family: var(--inter);
+    font-weight: var(--mainweight);
+    color: #ff66af;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.service-content p {
+    font-family: var(--inter);
+    font-weight: var(--primaryweight);
+    color: var(--subtitleColor);
+    font-size: 16px;
+    padding-bottom: 40px;
+    padding-left: 46px;
+    padding-right: 46px;
+    line-height: 26px;
+}
+
+.service-content h4 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 16px;
+    padding-bottom: 40px;
+    padding-left: 46px;
+    padding-right: 46px;
+    line-height: 26px;
+}
+
+.service-item {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 10px;
+}
+/* donation end */
+
+/* hope section */
+
+.hope-img img {
+    width: 70%;
+}
+
+.hope-header h2 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    width: 78%;
+}
+
+.date h3 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--orange);
+    font-size: 38px;
+    line-height: 50px;
+    margin-right: 28px;
+}
+
+.review h4 {
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 64px;
+}
+
+.review p {
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    color: var(--titlecolor);
+    font-size: 15px;
+    line-height: 26px;
+    padding-right: 85px;
+    padding-top: 15px;
+    margin-bottom: 55px;
+}
+/* hope section end */
+
+/* offer section start*/
+
+#offer {
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+
+.offer-img img {
+    width: 70%;
+}
+
+.offer-heading h2 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    width: 78%;
+}
+
+.offer-title {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* offer section end */
+
+/* help section */
+#help {
+    padding-bottom: 80px;
+}
+.day-heading h3 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 38px;
+    line-height: 48px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+}
+
+.help-img {
+    margin-right: 28px;
+}
+
+.help-pra h4 {
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    color: var(--black);
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 64px;
+}
+
+.help-pra p {
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    color: var(--titlecolor);
+    font-size: 15px;
+    line-height: 26px;
+    padding-right: 85px;
+    padding-top: 15px;
+    margin-bottom: 55px;
+}
+
+.help-middle-img img {
+    width: 100%;
+}
+
+/* help section end */
+
+/* Vounteer section start */
+
+#volunteer {
+    padding: 80px;
+    background-color: #cce9f8;
+}
+.day-heading p {
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    color: var(--titlecolor);
+    font-size: 15px;
+    line-height: 26px;
+    width: 65%;
+    margin: auto;
+}
+
+.vounteer-button button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: var(--primarycolor);
+    color: var(--commoncolor);
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    font-size: 16px;
+    margin-top: 28px;
+    transition: all linear 0.3s;
+}
+
+.vounteer-button button:hover {
+    background: transparent;
+    border-color: var(--primarycolor);
+    color: var(--primarycolor);
+}
+
+/* Vounteer section end */
+
+/* medicine req section start */
+
+#medicine {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.midecine-req h4 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 30px;
+    line-height: 48px;
+}
+
+.midecine-req p {
+    font-family: var(--poppins);
+    font-weight: var(--primaryweight);
+    color: var(--titlecolor);
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.medecine-req-form-heading h2 {
+    font-family: var(--poppins);
+    font-weight: var(--mainweight);
+    color: var(--black);
+    font-size: 30px;
+    line-height: 48px;
+}
+
+.medicine-req-forms-button button {
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: var(--primarycolor);
+    color: var(--commoncolor);
+    font-family: var(--poppins);
+    font-weight: var(--secondaryweight);
+    font-size: 16px;
+    margin-top: 28px;
+    transition: all linear 0.3s;
+}
+
+.medicine-req-forms-button button:hover {
+    background: transparent;
+    border-color: var(--primarycolor);
+    color: var(--primarycolor);
+}
+
+/* Medicine req setion end */
+
+#footer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.footer-content p {
+    font-family: var(--inter);
+    font-weight: var(--primaryweight);
+    color: #7b7b7b;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 30px;
+}
+
+.about h4 {
+    font-family: var(--inter);
+    font-weight: var(--secondaryweight);
+    color: var(--titleColor);
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+.about ul {
+    padding-left: 0;
+}
+.about ul li a {
+    font-family: var(--inter);
+    font-weight: var(--primaryweight);
+    color: #7b7b7b;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.footer-margin {
+    margin-left: 130px;
+}
+#footer-card {
+    padding-bottom: 30px;
+}
+
+.footer-border {
+    border-bottom: 3px solid #e8e8e8;
+}
+
+.footer-border:hover {
+    border-bottom: 3px solid #6a4df4;
+}
+
+.footer-card p {
+    font-family: var(--inter);
+    font-weight: var(--primaryweight);
+    color: #d0d0d0;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 20px;
+}
+
+/* footer area end */
+
+.form_section {
+    background: #8592a3;
+    height: 70vh;
+    margin: 20px;
+}
+.btn-donate {
+    background: linear-gradient(to right, #e13c3c, #efd043);
+    color: #fff;
+    border: none;
+    margin-left: 88%;
+    padding: 12px 30px;
+    border-radius: 80px;
+}

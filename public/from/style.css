@@ -1,0 +1,13 @@
+.form_section {
+  background: #8592a3;
+  height: 70vh;
+  margin: 20px;
+}
+.btn-donate {
+  background: linear-gradient(to right, #e13c3c, #efd043);
+  color: #fff;
+  border: none;
+  margin-left: 88%;
+  padding: 12px 30px;
+  border-radius: 80px;
+}
